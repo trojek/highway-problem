@@ -1,5 +1,16 @@
 public class Highway {
 
+	/*
+	 * possible_to_build() - method give an answer to question that is possible
+	 *  to build highway on the north or south of the existing road.
+	 *  
+	 *  return 0 or 1
+	 *  0 if building highways is impossible
+	 *  1 if building highways is possible
+	 *  
+	 *  city_connection - two dimensional array with expected road connections 
+	 *  (e.g. city_connection[[1,3][4,2]) means that is wanted to build connection between cities 1,3 and 4,2)
+	 */
 	public static int possible_to_build(int[][] city_connection) {
 		
 		int[][] builded_highways_north = new int[city_connection.length][2];
@@ -19,12 +30,21 @@ public class Highway {
 			} else {
 				builded_highways_south[counter_north] = city_connection[i];
 				counter_north++;
-
 			}
 		}
 		return 1;
 	}
 
+	/*
+	 * public check_if_cross() - check if it is possible to build the highway on north or south
+	 * 
+	 * return 0 or 1
+	 * 0 if it is impossible
+	 * 1 if it is possible
+	 * 
+	 * existing_highways - array with highways which are already builded
+	 * expected_highway - array with number of cities which we want to build highway between
+	 */
 	public static boolean check_if_cross(int[][] existing_highways,
 			int[] expected_highway) {
 
