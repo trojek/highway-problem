@@ -40,11 +40,6 @@ public class Main {
 			Arrays.sort(city_connection[i]);
 		}
 
-		int[][] builded_highways_north = new int[k][2];
-		int[][] builded_highways_south = new int[k][2];
-		builded_highways_north[0] = city_connection[0];
-
-		System.out.println(Highway.possible_to_build(city_connection,
-				builded_highways_north, builded_highways_south));
+		System.out.println(Highway.possible_to_build(city_connection));
 	}
 }

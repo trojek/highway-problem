@@ -1,7 +1,11 @@
 public class Highway {
 
-	public static int possible_to_build(int[][] city_connection,
-			int[][] builded_highways_north, int[][] builded_highways_south) {
+	public static int possible_to_build(int[][] city_connection) {
+		
+		int[][] builded_highways_north = new int[city_connection.length][2];
+		int[][] builded_highways_south = new int[city_connection.length][2];
+		builded_highways_north[0] = city_connection[0];
+		
 		for (int i = 1; i < city_connection.length; i++) {
 			int counter_north = 1;
 			int counter_south = 0;
