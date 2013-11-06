@@ -27,7 +27,8 @@ public class Main {
 		// Open file and read it int by int
 		in = new Scanner(new BufferedInputStream(new FileInputStream(args[0])));
 
-		int n = in.nextInt();
+		// variable n is not necessary but is is mentioned in problem 
+		// int n = in.nextInt();
 		int k = in.nextInt();
 		int[][] city_connection = new int[k][2];
 

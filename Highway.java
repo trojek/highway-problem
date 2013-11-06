@@ -1,7 +1,11 @@
+/*
+ * Class Highway contains algorithm (methods) to solve problem 
+ * if it is possible to build expected highways
+ */
 public class Highway {
 
 	/*
-	 * possible_to_build() - method give an answer to question that is possible
+	 *  public int possible_to_build() - method give an answer to question that is possible
 	 *  to build highway on the north or south of the existing road.
 	 *  
 	 *  return 0 or 1
@@ -36,11 +40,11 @@ public class Highway {
 	}
 
 	/*
-	 * public check_if_cross() - check if it is possible to build the highway on north or south
+	 * public boolean check_if_cross() - check if it is possible to build the highway on north or south
 	 * 
 	 * return 0 or 1
-	 * 0 if it is impossible
-	 * 1 if it is possible
+	 * 0 if building highway is impossible
+	 * 1 if building highway is possible
 	 * 
 	 * existing_highways - array with highways which are already builded
 	 * expected_highway - array with number of cities which we want to build highway between
